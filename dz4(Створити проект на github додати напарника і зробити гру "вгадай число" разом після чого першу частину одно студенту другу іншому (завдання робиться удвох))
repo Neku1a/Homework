@@ -1,0 +1,14 @@
+from random import *
+rand = randint(1, 999)
+attempts = 0
+print("\nВгадайте число від 1 до 999")
+while True:
+    attempts += 1
+    user = int(input("\nВведіть число: "))
+    if user == rand:
+        print(f"Ви вгадали! Кількість спроб: {attempts}")
+        break
+    elif user < rand:
+        print(" Більше!")
+    else:
+        print(" Менше!")
